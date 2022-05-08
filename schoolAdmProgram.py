@@ -4,8 +4,8 @@ def write_into_csv(info_list):
     with open('stu_info.csv','a', newline='') as csv_files:
         writer = csv.writer(csv_files)
         
-       # if csv_files.tell()==0
-       #     writer.writerow("Name", "Age", "Contact", "Email-ID")
+        if csv_files.tell()==0
+            writer.writerow("Name", "Age", "Contact", "Email-ID")
         
         writer.writerow(info_list)
 
